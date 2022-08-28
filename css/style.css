@@ -1,0 +1,229 @@
+html {      
+    font-family: 'Roboto', sans-serif;    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    background-image: url("../assets/images/carbon.png");
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+}
+
+
+.tittle-1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.links-nav a {
+    color: #a52a2a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.links-nav a:hover {
+    font-size: 3.1rem;
+    color: #ffffff;
+    transition: ease 1000ms;
+}
+
+p {
+    color: rgb(252, 252, 252);
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    font-size: 1.6rem;
+    color: #ffffff;
+    transition: ease 1000ms;
+}
+
+.main-index {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+main li {
+    margin: 1rem;
+}
+
+.imagen-foto img {
+    border-radius: 50%;
+    width: 400px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+footer ul li svg {
+    margin: 1rem;
+    color: rgb(252, 252, 252);
+    font-size: 1rem;
+}
+
+/* -----------------FREELANCE------------------- */
+
+.tittle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.container-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-works {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.images-works a {
+    text-align: center;
+    margin: 1rem;
+
+    font-size: 2rem;
+}
+
+.images-works img:hover {
+    width: 45%;
+    transition: ease 1000ms;
+}
+
+.container-images img {
+    width: 500px;
+}
+
+/* -------------------CONTACT------------------- */
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-form {
+    max-width: 100%;
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.form {
+
+    background-image: url("../assets/images/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.input-form {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-form input {
+    width: 70%;
+    max-width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.input-form textarea {
+    margin-top: 1.5rem;
+    font-family: sans-serif;
+    width: 70%;
+    max-width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 35%;
+}
+
+
+/* -------------------ABOUT------------------- */
+
+.container-about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem;
+    align-self: center;
+}
+.logos img{
+    width: 100px;
+    margin: 0 1rem;
+    border-radius: 50%;     
+}
+
+.logos-cuadro img{
+    width: 120px;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+      
+}
+
+.container-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
