@@ -11,9 +11,7 @@ html {
     
 }
 
-body {
-    
-    font-size: 1.5rem;
+body {     
     background-image: url("../assets/images/carbon.png");
     color: #ffffff;
 }
@@ -30,19 +28,19 @@ img {
 
 a {
     text-decoration: none;
-    color: brown;
-    font-size: 1.9rem;
+    color: #ffffff;
+    font-size: 1.5rem;
 }
 
 a:hover {
-    font-size: 2rem;
-    color: #ffffff;
+    font-size: 1.7rem;
+    color: #a52a2a;
     transition: ease 1000ms;
 }
 
 p {
-    color: rgb(252, 252, 252);
-    font-size: 1.5rem;
+    color: #fcfcfc;
+    font-size: 1rem;
 }
 
 li {
@@ -53,8 +51,8 @@ li {
 header .tittle-1 {
     font-weight: 400;
     text-align: center;
-    font-size: 3rem;
-    margin: 4rem 0;
+    font-size: 2.7rem;
+    margin: 3rem 0;
 }
 
 .main-index {
@@ -64,34 +62,19 @@ header .tittle-1 {
     justify-content: space-evenly;
 }
 
-@media (min-width:480px){
-    .main-index {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;        
-        justify-content: space-evenly;
-    }
-}
-
 .links-nav{
     text-align: center;
-}
-
-@media (min-width:480px){
-    .links-nav{
-        text-align: left;
-    }
 }
 
 .links-nav a {
     color: #a52a2a;
     text-decoration: none;
     font-weight: 600;
-    font-size: 2.7rem;    
+    font-size: 2rem;    
 }
 
 .links-nav a:hover {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: #ffffff;
     transition: ease 1000ms;
 }
@@ -102,19 +85,19 @@ main li {
 
 .imagen-foto img {
     border-radius: 50%;
-    width: 320px;
+    width: 300px;
 }
 
 footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
 }
 
 footer ul li svg {
-    margin: 1rem;
+    margin: 0  1rem;
     color: rgb(252, 252, 252);
     font-size: 1rem;
 }
@@ -124,8 +107,9 @@ footer ul li svg {
 .tittle {
     text-align: center;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     margin: 0;
+    color: #a52a2a;
 }
 
 .container-images {
@@ -143,8 +127,8 @@ footer ul li svg {
 .images-works a {
     text-align: center;
     margin: 1rem;
-
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff
 }
 
 .images-works img:hover {
@@ -160,27 +144,28 @@ footer ul li svg {
 .main-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;         
 }
 
 .container-form {
     max-width: 100%;
     margin-top: 2rem;
-    width: 90%;
+    width: 100%;
+    
 }
 
-
 .form {
-    background-image: url("../assets/images/fondo1.jpg");
+    background-image: url("../assets/images/fondo.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: cover;    
     padding: 3rem;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem;   
+   
 }
 
 .input-form {
     margin-bottom: 1.5rem;
-    text-align: center;
+    text-align: center;    
 }
 
 .input-form input {
@@ -192,18 +177,8 @@ footer ul li svg {
     color:#ffffff;
     border: solid grey;
     border-radius: 2rem;
-    background-color: rgba(9, 8, 8, 0.5);   
+    background-color: rgba(9, 8, 8, 0.7);   
    
-}
-
-@media (min-width:768px){
-    .input-form input {
-        width: 70%;        
-    }
-
-    .input-form textarea{
-        width: 80%;
-    }
 }
 
 .input-form textarea {
@@ -217,7 +192,7 @@ footer ul li svg {
     color:#ffffff;
     border: solid grey;
     border-radius: 0.5rem;
-    background-color: rgba(9, 8, 8, 0.5);   
+    background-color: rgba(9, 8, 8, 0.7);   
 }
 
 .input-form input:hover {
@@ -254,7 +229,59 @@ footer ul li svg {
     align-self: center;
 }
 
+.logos img {
+    width: 100px;    
+    border-radius: 50%;
+}
+
+.logos-cuadro img {
+    width: 150px;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+}
+.container-circulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.container-cuadro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* -------------RESPONSIVE-------------------- */
+
+@media (min-width:480px){
+    .main-index {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;        
+        justify-content: space-evenly;        
+    }
+
+    .links-nav{
+        text-align: left;
+    }
+
+    .container-form {        
+        margin-top: 2rem;
+        width: 80%;
+    }
+}
+
 @media (min-width:768px){
+    .input-form input {
+        width: 70%;        
+    }
+
+    .input-form textarea{
+        width: 70%;
+    }
+
     .container-about {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -267,29 +294,9 @@ footer ul li svg {
     .foto-about {
         display: block;
     }
-}
 
-.logos img {
-    width: 110px;
-    margin: 0 1rem;
-    border-radius: 50%;
-}
-
-.logos-cuadro img {
-    width: 150px;
-    margin: 0 1rem;
-    border-radius: 0.5rem;
-}
-.container-circulo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2rem;
-}
-
-.container-cuadro{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2rem;
+    .container-form {        
+        margin-top: 2rem;
+        width: 70%;
+    }
 }
